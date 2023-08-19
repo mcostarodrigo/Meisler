@@ -1,16 +1,16 @@
-def find_largest_number(arr):
-    if not arr:
+def encontre_maior_numero(array):
+    if not array:
         return None
 
-    largest = arr[0]
+    maior = array[0]
 
-    for num in arr:
-        if num > largest:
-            largest = num
+    for num in array:
+        if num > maior:
+            maior = num
 
-    return largest
+    return maior
 
 
-input_array = [5, 13, 2, 11, 40, 9]
-largest_number = find_largest_number(input_array)
-print(f"The largest number is {largest_number}.")
+array = [5, 13, 41, 52, 40, 9]
+maior_numero = encontre_maior_numero(array)
+print(f"O maior número é {maior_numero}.")
